@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opperbier</title>
+    <title>Opper-Bier - Bier met een knipoog en karakter</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
 </head>
@@ -11,24 +11,164 @@
     <header class="main-header">
         <nav class="nav-bar">
             <div class="nav-left">
-                <a href="pagina1.html">Over ons</a>
-                <a href="pagina2.html">Acties</a>
+                <a href="#over-ons">Over ons</a>
+                <a href="#producten">Producten</a>
             </div>
             <div class="nav-logo">
-                <img src="img/logo.png" alt="Logo" class="logo">
+                <img src="img/logo.png" alt="Opper-Bier Logo" class="logo">
             </div>
             <div class="nav-right">
-                <a href="pagina3.html">Webshop</a>
-                <a href="pagina4.html">Nieuwsbrief</a>
+                <a href="#verkrijgbaar">Verkrijgbaar</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
 
+    <!-- Hero Sectie -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Opper-Bier</h1>
+            <p class="hero-slogan">Bier met een knipoog en karakter</p>
+            <button class="cta-button">Over ons</button>
+        </div>
+    </section>
+
+    <!-- Spline 3D Model Sectie -->
     <div class="spline-container">
         <iframe src="https://my.spline.design/untitled-d3f2f6237d58c824499c3776f7719185/" 
                 frameborder="0" 
                 class="spline-frame">
         </iframe>
     </div>
+
+    <!-- Info Cards Sectie -->
+    <section class="info-cards">
+        <div class="container">
+            <div class="card">
+                <h3>Bierkrat Prijs</h3>
+                <p class="price">€24,99</p>
+                <p>Voor een krat van 24 flessen</p>
+            </div>
+            <div class="card">
+                <h3>Abonnementskorting</h3>
+                <p class="discount">15% korting</p>
+                <p>Bij maandelijks abonnement</p>
+            </div>
+            <div class="card">
+                <h3>Quote van de dag</h3>
+                <p class="quote">"Een goed bier is als een goede vriend - altijd betrouwbaar!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producten Slider Sectie -->
+    <section id="producten" class="products-section">
+        <div class="container">
+            <h2>Onze Bieren</h2>
+            <div class="product-slider">
+                <button class="slider-btn prev-btn">&lt;</button>
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide active">
+                            <img src="img/trippel biertje.png" alt="Opper-Bier Tripel">
+                            <div class="slide-content">
+                                <h3>Opper-Bier Tripel</h3>
+                                <p>Een volle, complexe tripel met hints van fruit en kruiden.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/blond biertje.png" alt="Opper-Bier Blond">
+                            <div class="slide-content">
+                                <h3>Opper-Bier Blond</h3>
+                                <p>Fris en toegankelijk blond bier met een subtiele hopbitterheid.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/speciaalbiertje.png" alt="Opper-Bier Speciaal">
+                            <div class="slide-content">
+                                <h3>Opper-Bier Speciaal</h3>
+                                <p>Onze speciale editie met unieke smaken en aroma's.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/flesje dubbel.png" alt="Opper-Bier Dubbel">
+                            <div class="slide-content">
+                                <h3>Opper-Bier Dubbel</h3>
+                                <p>Rijk en vol dubbel bier met tonen van karamel en mout.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verkrijgbaar Bij Sectie -->
+    <section id="verkrijgbaar" class="availability-section">
+        <div class="container">
+            <h2>Verkrijgbaar Bij</h2>
+            <div class="store-grid">
+                <div class="store-item">
+                    <img src="img/logo.png" alt="Supermarkt 1" class="store-logo">
+                    <span class="store-name">Albert Heijn</span>
+                </div>
+                <div class="store-item">
+                    <img src="img/logo.png" alt="Supermarkt 2" class="store-logo">
+                    <span class="store-name">Jumbo</span>
+                </div>
+                <div class="store-item">
+                    <img src="img/logo.png" alt="Supermarkt 3" class="store-logo">
+                    <span class="store-name">Plus</span>
+                </div>
+                <div class="store-item">
+                    <img src="img/logo.png" alt="Slijterij 1" class="store-logo">
+                    <span class="store-name">Gall & Gall</span>
+                </div>
+                <div class="store-item">
+                    <img src="img/logo.png" alt="Slijterij 2" class="store-logo">
+                    <span class="store-name">Drankgigant</span>
+                </div>
+                <div class="store-item">
+                    <img src="img/logo.png" alt="Slijterij 3" class="store-logo">
+                    <span class="store-name">Slijterij van der Meer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Navigatie</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#over-ons">Over ons</a></li>
+                        <li><a href="#producten">Producten</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Opper-Bier Brouwerij</p>
+                    <p>Email: info@opper-bier.nl</p>
+                    <p>Tel: +31 20 123 4567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Volg ons</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📧</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">📘</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-slogan">Waar het schuimt, zakt de stress. 🍻</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
